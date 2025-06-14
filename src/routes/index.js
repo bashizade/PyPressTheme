@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import HomeView from '../views/HomeView.vue'; // Changed to default import
+import ProductView from '../views/ProductView.vue';
 
 const routes = [
   {
@@ -7,6 +8,11 @@ const routes = [
     component: HomeView,
     name: 'home',
   },
+  {
+    path: '/product/:id',
+    component: ProductView,
+    name: 'product'
+  }
 ];
 
 const router = createRouter({
