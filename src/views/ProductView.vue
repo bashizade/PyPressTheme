@@ -1,6 +1,7 @@
 <script setup>
 import CountProduct from '../components/CountProduct.vue';
 import ProductGallery from '../components/ProductGallery.vue';
+import ProductsRelated from '../components/ProductsRelated.vue';
 
 
 </script>
@@ -45,6 +46,76 @@ import ProductGallery from '../components/ProductGallery.vue';
             <div class=" col-span-5">
                 <ProductGallery />
             </div>
+        </div>
+        <div class="mt-10">
+            <h2 class=" font-bold">Product Description</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ut laboriosam natus vel a sapiente et
+                reiciendis, odio deleniti tempora officia, totam consequuntur, aliquid quo. Fugit tempore quasi ipsum
+                nemo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequatur voluptas, eveniet
+                voluptatibus facere doloremque inventore, et amet veniam voluptatum, enim ducimus a esse similique.
+                Corrupti iure similique tempore ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus autem deleniti quae sapiente, cupiditate
+                vero consectetur eaque impedit exercitationem error dolorem eum, sit aut nihil similique est mollitia ea
+                at?
+            </p>
+        </div>
+        <div class="mt-10">
+            <h2 class="font-bold">Comments</h2>
+            <div class=" grid grid-cols-2 gap-2">
+                <div class="">
+                    <form action="">
+                        <div class="mb-2">
+                            <input type="text" class="input w-full" placeholder="subject">
+                        </div>
+                        <div class="mb-2">
+                            <textarea name="" id="" placeholder="Message" class="textarea w-full"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-accent">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div class=" h-96 overflow-y-auto">
+                        <div class="chat chat-start">
+                            <div class="chat-bubble">
+                                <h6>Username</h6>
+                                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae porro modi odit assumenda, eius quasi illo natus ipsa vero temporibus illum vitae deserunt! Culpa similique sed maxime eligendi ullam!</p>
+                            </div>
+                        </div>
+                        <div class="chat chat-start">
+                            <div class="chat-bubble">
+                                <h6>Username</h6>
+                                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae porro modi odit assumenda, eius quasi illo natus ipsa vero temporibus illum vitae deserunt! Culpa similique sed maxime eligendi ullam!</p>
+                            </div>
+                        </div>
+                        <div class="chat chat-start">
+                            <div class="chat-bubble">
+                                <h6>Username</h6>
+                                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae porro modi odit assumenda, eius quasi illo natus ipsa vero temporibus illum vitae deserunt! Culpa similique sed maxime eligendi ullam!</p>
+                            </div>
+                        </div>
+                        <div class="chat chat-start">
+                            <div class="chat-bubble">
+                                <h6>Username</h6>
+                                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae porro modi odit assumenda, eius quasi illo natus ipsa vero temporibus illum vitae deserunt! Culpa similique sed maxime eligendi ullam!</p>
+                            </div>
+                        </div>
+                        <div class="chat chat-start">
+                            <div class="chat-bubble">
+                                <h6>Username</h6>
+                                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae porro modi odit assumenda, eius quasi illo natus ipsa vero temporibus illum vitae deserunt! Culpa similique sed maxime eligendi ullam!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <h6 class="mb-4 text-center font-bold text-3xl">Relations Products</h6>
+            <ProductsRelated />
         </div>
     </div>
 </template>

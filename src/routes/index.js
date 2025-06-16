@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import HomeView from '../views/HomeView.vue'; // Changed to default import
 import ProductView from '../views/ProductView.vue';
+import ProductsView from '../views/ProductsView.vue';
 
 const routes = [
   {
@@ -9,10 +10,21 @@ const routes = [
     name: 'home',
   },
   {
-    path: '/product/:id',
-    component: ProductView,
-    name: 'product'
-  }
+    path: '/products',
+    children: [
+      {
+        path: '',
+        component: ProductsView,
+        name: 'products',
+      },
+      {
+        path: ':id',
+        component: ProductView,
+        name: 'product'
+      },
+    ]
+  },
+
 ];
 
 const router = createRouter({
