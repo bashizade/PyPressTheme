@@ -6,7 +6,7 @@ import Footer from './components/Footer.vue';
 <template>
   <Header />
 
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center pt-20">
     <div class="my-4 max-w-5xl">
       <router-view />
     </div>
